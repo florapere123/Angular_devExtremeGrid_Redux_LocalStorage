@@ -1,0 +1,17 @@
+
+  <div class="form-container">
+    <dx-form id="form"
+        [colCount]="2"
+        [formData]="rateItemClone">
+        <dxi-item dataField="id" [editorOptions]="{ disabled: true }"></dxi-item>
+        <dxi-item dataField="Rate"></dxi-item>
+        <dxi-item dataField="Date" editorType="dxDateBox"  ></dxi-item>
+         
+    </dx-form>
+
+    <div class="button-bar">
+      <button (click)="update()">{{ rateItemClone.id ? 'Update' : 'Create'}}</button>
+      <button (click)="delete()">Delete</button>
+    </div>
+  </div>
+

@@ -1,0 +1,15 @@
+::ng-deep .dx-datagrid-nowrap .dx-header-row > td> .dx-datagrid-text-content{
+    font-size: 1em;
+    color:#E3E3E3;
+} 
+::ng-deep .dx-datagrid-nowrap .dx-header-row >td {
+    background-color:rgb(19, 15, 144);
+}
+/* ::ng-deep .dx-datagrid-nowrap  .dx-datagrid-rowsview .dx-row-focused.dx-data-row .dx-command-edit:not(.dx-focused) .dx-link, .dx-datagrid-rowsview .dx-row-focused.dx-data-row > td:not(.dx-focused), .dx-datagrid-rowsview .dx-row-focused.dx-data-row > tr > td:not(.dx-focused) {
+    background-color:lightsalmon;
+    color: #fff;
+}
+::ng-deep #gridContainer .dx-row-focused   {
+    background-color:brown;
+    color: #fff;
+} */

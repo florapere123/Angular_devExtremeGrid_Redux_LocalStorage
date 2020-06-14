@@ -1,0 +1,37 @@
+  <div [className]="'gridBorder'">
+    <div>
+     <button (click)="sortRateItemByDate()"  [ngStyle]="{margin: '1rem'}">sort By Date {{sorting.ByDate ? 'desc' :'asc'}}</button>
+     <button (click)="sortRateItemByRate()"  [ngStyle]="{margin: '1rem'}">sort By Rate {{sorting.ByRate ? 'desc' :'asc'}}</button>
+     <button (click)="onChangeOneRowDown()"  [ngStyle]="{margin: '1rem'}">move row down</button>
+    </div>
+<div>
+  <dx-data-grid
+    id="gridContainer"
+    [focusedRowEnabled]="true"
+    [dataSource]="state.rateItemsState.rateItems"
+    [columns]="['id','Date', 'Rate']"
+    [showBorders]="true"
+    keyExpr="id"
+    [selectedRowKeys]="[]"
+    [allowSorting]="true"
+    [hoverStateEnabled]="true"
+    [focusedRowEnabled]="true"
+    (onSelectionChanged)="onSelectionChanged($event)">
+    <dxo-row-dragging
+    [allowReordering]="true"
+    [onReorder]="onReorder"
+    [showDragIcons]="true"
+    (onRowRemoving)="logEvent('RowRemoving')"
+    (onRowRemoved)="logEvent('RowRemoved')"
+></dxo-row-dragging>
+    <dxo-selection mode="single"></dxo-selection>
+    <dxo-editing 
+    mode="row"
+     [allowDeleting]="true"  >
+</dxo-editing>
+    <dxi-column dataField="id" dataType="number"  width="75" alignment="center" ></dxi-column>
+    <dxi-column dataField="Date" dataType="date" format='shortDateShortTime' width="250" alignment="center"></dxi-column>
+    <dxi-column dataField="Rate" dataType="number" width="250" alignment="center"></dxi-column> 
+  </dx-data-grid>
+</div>
+</div>

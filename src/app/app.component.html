@@ -1,0 +1,8 @@
+<div class="app-container">
+  <!-- <app-top-bar></app-top-bar> -->
+  <div class="body">
+    <app-list-tnstoday></app-list-tnstoday>
+     <app-detailed-tnstoday *ngIf="state.rateItemsState.selectedRateItem" 
+      [rateItem]="state.rateItemsState.selectedRateItem"></app-detailed-tnstoday>
+  </div>
+</div>
