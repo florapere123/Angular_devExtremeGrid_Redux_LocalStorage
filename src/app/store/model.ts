@@ -1,6 +1,5 @@
-import { IRateItemState } from '../model/rateItem.model';
+import { IRateItemState } from '../model/rateItem.model'
 
 export interface IAppState {
-  rateItemsState: IRateItemState;
+    rateItemsState: IRateItemState
 }
-

@@ -1,14 +1,14 @@
 {
   "name": "my-app",
   "version": "0.0.0",
-  "prettier": "@company/prettier-config",
-  "scripts": {
+   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 5000",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "prettier": "prettier --write ./{src,config}/**/*.{ts,tsx,js}"
   },
   "private": true,
   "dependencies": {
@@ -27,6 +27,7 @@
     "devextreme": "19.2.6",
     "devextreme-angular": "^19.2.6",
     "lodash": "^4.17.15",
+    "prettier": "1.19.1",
     "redux": "^3.7.2",
     "redux-devtools-extension": "^2.13.2",
     "redux-localstorage": "^0.4.1",

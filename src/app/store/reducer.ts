@@ -1,14 +1,10 @@
-import { Reducer, combineReducers} from 'redux';
-import { IAppState } from './model';
+import { Reducer, combineReducers } from 'redux'
+import { IAppState } from './model'
 
-import { createRateItemReducer } from '../reducers/rateitem.reducer';
+import { createRateItemReducer } from '../reducers/rateitem.reducer'
 
 export const reducerMap = {
-    rateItemsState: createRateItemReducer()
-};
+    rateItemsState: createRateItemReducer(),
+}
 
-export const rootReducer: Reducer<IAppState> = combineReducers<IAppState>(reducerMap);
-
-
-
-
+export const rootReducer: Reducer<IAppState> = combineReducers<IAppState>(reducerMap)
