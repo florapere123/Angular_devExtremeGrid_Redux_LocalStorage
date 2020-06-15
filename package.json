@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.0.0",
-   "scripts": {
+  "scripts": {
     "ng": "ng",
     "start": "ng serve --port 5000",
     "build": "ng build",
